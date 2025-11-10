@@ -11,7 +11,6 @@ export const useGame = () => {
     const [selectedAnswer, setSelectedAnswer] = React.useState<QuizResponse | null>(null)
     const [showResult, setShowResult] = React.useState(false)
   
-    // Ordem de progressão dos níveis, com novos níveis incluídos
     const levelOrder = React.useMemo(() => [
       Level.ONE,
       Level.TWO,
